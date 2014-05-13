@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B65DA9C018ED6A5100CDA6C5 /* MemoritViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65DA9BE18ED6A5100CDA6C5 /* MemoritViewController.xib */; };
+		B67AA01218EDC3750013937E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B67AA01018EDC3750013937E /* background.png */; };
+		B67AA01318EDC3750013937E /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B67AA01118EDC3750013937E /* background@2x.png */; };
+		B67AA01718EDCC750013937E /* MemoritViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67AA01518EDCC750013937E /* MemoritViewController.m */; };
+		B67AA02A18EDD9DB0013937E /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67AA02818EDD9DB0013937E /* InfoViewController.m */; };
+		B67AA02B18EDD9DB0013937E /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67AA02918EDD9DB0013937E /* InfoViewController.xib */; };
+		B67AA02F18EDE6960013937E /* MemoritGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B67AA02E18EDE6960013937E /* MemoritGame.m */; };
+		B6868C8E18F291C3003A8E6E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6868C8D18F291C3003A8E6E /* AVFoundation.framework */; };
+		B6868C9318F2D6ED003A8E6E /* default_blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6868C8F18F2D6ED003A8E6E /* default_blue.mp3 */; };
+		B6868C9418F2D6ED003A8E6E /* default_green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6868C9018F2D6ED003A8E6E /* default_green.mp3 */; };
+		B6868C9518F2D6ED003A8E6E /* default_red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6868C9118F2D6ED003A8E6E /* default_red.mp3 */; };
+		B6868C9618F2D6ED003A8E6E /* default_yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6868C9218F2D6ED003A8E6E /* default_yellow.mp3 */; };
+		B6868C9918F2D9F3003A8E6E /* launch-image@2x_R4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6868C9718F2D9F3003A8E6E /* launch-image@2x_R4.png */; };
+		B6868C9A18F2D9F3003A8E6E /* launch-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6868C9818F2D9F3003A8E6E /* launch-image@2x.png */; };
+		B69C4F8718EF0B4F00131947 /* blue-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7718EF0B4F00131947 /* blue-dim.png */; };
+		B69C4F8818EF0B4F00131947 /* blue-dim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7818EF0B4F00131947 /* blue-dim@2x.png */; };
+		B69C4F8918EF0B4F00131947 /* blue-lit.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7918EF0B4F00131947 /* blue-lit.png */; };
+		B69C4F8A18EF0B4F00131947 /* blue-lit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7A18EF0B4F00131947 /* blue-lit@2x.png */; };
+		B69C4F8B18EF0B4F00131947 /* green-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7B18EF0B4F00131947 /* green-dim.png */; };
+		B69C4F8C18EF0B4F00131947 /* green-dim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7C18EF0B4F00131947 /* green-dim@2x.png */; };
+		B69C4F8D18EF0B4F00131947 /* green-lit.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7D18EF0B4F00131947 /* green-lit.png */; };
+		B69C4F8E18EF0B4F00131947 /* green-lit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7E18EF0B4F00131947 /* green-lit@2x.png */; };
+		B69C4F8F18EF0B4F00131947 /* red-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F7F18EF0B4F00131947 /* red-dim.png */; };
+		B69C4F9018EF0B4F00131947 /* red-dim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8018EF0B4F00131947 /* red-dim@2x.png */; };
+		B69C4F9118EF0B4F00131947 /* red-lit.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8118EF0B4F00131947 /* red-lit.png */; };
+		B69C4F9218EF0B4F00131947 /* red-lit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8218EF0B4F00131947 /* red-lit@2x.png */; };
+		B69C4F9318EF0B4F00131947 /* yellow-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8318EF0B4F00131947 /* yellow-dim.png */; };
+		B69C4F9418EF0B4F00131947 /* yellow-dim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8418EF0B4F00131947 /* yellow-dim@2x.png */; };
+		B69C4F9518EF0B4F00131947 /* yellow-lit.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8518EF0B4F00131947 /* yellow-lit.png */; };
+		B69C4F9618EF0B4F00131947 /* yellow-lit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4F8618EF0B4F00131947 /* yellow-lit@2x.png */; };
+		B69C4FE818EF81BC00131947 /* background-ready.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4FE618EF81BC00131947 /* background-ready.png */; };
+		B69C4FE918EF81BC00131947 /* background-ready@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C4FE718EF81BC00131947 /* background-ready@2x.png */; };
+		B6CF74DC18ED306B001DD607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74DB18ED306B001DD607 /* Foundation.framework */; };
+		B6CF74DE18ED306B001DD607 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74DD18ED306B001DD607 /* CoreGraphics.framework */; };
+		B6CF74E018ED306B001DD607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74DF18ED306B001DD607 /* UIKit.framework */; };
+		B6CF74E618ED306B001DD607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CF74E418ED306B001DD607 /* InfoPlist.strings */; };
+		B6CF74E818ED306B001DD607 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF74E718ED306B001DD607 /* main.m */; };
+		B6CF74EC18ED306B001DD607 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF74EB18ED306B001DD607 /* AppDelegate.m */; };
+		B6CF74EE18ED306B001DD607 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6CF74ED18ED306B001DD607 /* Images.xcassets */; };
+		B6CF74F518ED306B001DD607 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74F418ED306B001DD607 /* XCTest.framework */; };
+		B6CF74F618ED306B001DD607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74DB18ED306B001DD607 /* Foundation.framework */; };
+		B6CF74F718ED306B001DD607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CF74DF18ED306B001DD607 /* UIKit.framework */; };
+		B6CF74FF18ED306B001DD607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CF74FD18ED306B001DD607 /* InfoPlist.strings */; };
+		B6CF750118ED306B001DD607 /* MemoritTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF750018ED306B001DD607 /* MemoritTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6CF74F818ED306B001DD607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6CF74D018ED306B001DD607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6CF74D718ED306B001DD607;
+			remoteInfo = Memorit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B65DA9BE18ED6A5100CDA6C5 /* MemoritViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MemoritViewController.xib; path = Memorit/MemoritViewController.xib; sourceTree = "<group>"; };
+		B67AA01018EDC3750013937E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B67AA01118EDC3750013937E /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		B67AA01418EDCC750013937E /* MemoritViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoritViewController.h; sourceTree = "<group>"; };
+		B67AA01518EDCC750013937E /* MemoritViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoritViewController.m; sourceTree = "<group>"; };
+		B67AA02718EDD9DB0013937E /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		B67AA02818EDD9DB0013937E /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		B67AA02918EDD9DB0013937E /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		B67AA02D18EDE6960013937E /* MemoritGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoritGame.h; sourceTree = "<group>"; };
+		B67AA02E18EDE6960013937E /* MemoritGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoritGame.m; sourceTree = "<group>"; };
+		B6868C8D18F291C3003A8E6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6868C8F18F2D6ED003A8E6E /* default_blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_blue.mp3; sourceTree = "<group>"; };
+		B6868C9018F2D6ED003A8E6E /* default_green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_green.mp3; sourceTree = "<group>"; };
+		B6868C9118F2D6ED003A8E6E /* default_red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_red.mp3; sourceTree = "<group>"; };
+		B6868C9218F2D6ED003A8E6E /* default_yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default_yellow.mp3; sourceTree = "<group>"; };
+		B6868C9718F2D9F3003A8E6E /* launch-image@2x_R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-image@2x_R4.png"; sourceTree = "<group>"; };
+		B6868C9818F2D9F3003A8E6E /* launch-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-image@2x.png"; sourceTree = "<group>"; };
+		B69C4F7718EF0B4F00131947 /* blue-dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-dim.png"; sourceTree = "<group>"; };
+		B69C4F7818EF0B4F00131947 /* blue-dim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-dim@2x.png"; sourceTree = "<group>"; };
+		B69C4F7918EF0B4F00131947 /* blue-lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-lit.png"; sourceTree = "<group>"; };
+		B69C4F7A18EF0B4F00131947 /* blue-lit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-lit@2x.png"; sourceTree = "<group>"; };
+		B69C4F7B18EF0B4F00131947 /* green-dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-dim.png"; sourceTree = "<group>"; };
+		B69C4F7C18EF0B4F00131947 /* green-dim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-dim@2x.png"; sourceTree = "<group>"; };
+		B69C4F7D18EF0B4F00131947 /* green-lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-lit.png"; sourceTree = "<group>"; };
+		B69C4F7E18EF0B4F00131947 /* green-lit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-lit@2x.png"; sourceTree = "<group>"; };
+		B69C4F7F18EF0B4F00131947 /* red-dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-dim.png"; sourceTree = "<group>"; };
+		B69C4F8018EF0B4F00131947 /* red-dim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-dim@2x.png"; sourceTree = "<group>"; };
+		B69C4F8118EF0B4F00131947 /* red-lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-lit.png"; sourceTree = "<group>"; };
+		B69C4F8218EF0B4F00131947 /* red-lit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-lit@2x.png"; sourceTree = "<group>"; };
+		B69C4F8318EF0B4F00131947 /* yellow-dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-dim.png"; sourceTree = "<group>"; };
+		B69C4F8418EF0B4F00131947 /* yellow-dim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-dim@2x.png"; sourceTree = "<group>"; };
+		B69C4F8518EF0B4F00131947 /* yellow-lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-lit.png"; sourceTree = "<group>"; };
+		B69C4F8618EF0B4F00131947 /* yellow-lit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-lit@2x.png"; sourceTree = "<group>"; };
+		B69C4FE618EF81BC00131947 /* background-ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-ready.png"; sourceTree = "<group>"; };
+		B69C4FE718EF81BC00131947 /* background-ready@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-ready@2x.png"; sourceTree = "<group>"; };
+		B6CF74D818ED306B001DD607 /* Memorit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CF74DB18ED306B001DD607 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6CF74DD18ED306B001DD607 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6CF74DF18ED306B001DD607 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6CF74E318ED306B001DD607 /* Memorit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Memorit-Info.plist"; sourceTree = "<group>"; };
+		B6CF74E518ED306B001DD607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6CF74E718ED306B001DD607 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6CF74E918ED306B001DD607 /* Memorit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memorit-Prefix.pch"; sourceTree = "<group>"; };
+		B6CF74EA18ED306B001DD607 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6CF74EB18ED306B001DD607 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6CF74ED18ED306B001DD607 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6CF74F318ED306B001DD607 /* MemoritTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoritTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CF74F418ED306B001DD607 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B6CF74FC18ED306B001DD607 /* MemoritTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoritTests-Info.plist"; sourceTree = "<group>"; };
+		B6CF74FE18ED306B001DD607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6CF750018ED306B001DD607 /* MemoritTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoritTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6CF74D518ED306B001DD607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6868C8E18F291C3003A8E6E /* AVFoundation.framework in Frameworks */,
+				B6CF74DE18ED306B001DD607 /* CoreGraphics.framework in Frameworks */,
+				B6CF74E018ED306B001DD607 /* UIKit.framework in Frameworks */,
+				B6CF74DC18ED306B001DD607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CF74F018ED306B001DD607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CF74F518ED306B001DD607 /* XCTest.framework in Frameworks */,
+				B6CF74F718ED306B001DD607 /* UIKit.framework in Frameworks */,
+				B6CF74F618ED306B001DD607 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B65DA9C118ED6CA500CDA6C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B65DA9C218ED6CA500CDA6C5 /* Images */,
+			);
+			name = Resources;
+			path = Memorit/Resources;
+			sourceTree = "<group>";
+		};
+		B65DA9C218ED6CA500CDA6C5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B67AA01018EDC3750013937E /* background.png */,
+				B67AA01118EDC3750013937E /* background@2x.png */,
+				B69C4FE618EF81BC00131947 /* background-ready.png */,
+				B69C4FE718EF81BC00131947 /* background-ready@2x.png */,
+				B6868C9818F2D9F3003A8E6E /* launch-image@2x.png */,
+				B6868C9718F2D9F3003A8E6E /* launch-image@2x_R4.png */,
+				B69C4F7618EF0B4F00131947 /* Buttons */,
+				B69C4FD718EF147500131947 /* Sounds */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B67AA00F18EDBAE30013937E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B6868C9B18F2DC13003A8E6E /* MemoritGame */,
+				B67AA02518EDD9BF0013937E /* MemoritViewController */,
+				B67AA02C18EDD9DF0013937E /* InfoViewController */,
+				B6CF74E118ED306B001DD607 /* Memorit */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		B67AA02518EDD9BF0013937E /* MemoritViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B67AA01418EDCC750013937E /* MemoritViewController.h */,
+				B67AA01518EDCC750013937E /* MemoritViewController.m */,
+				B65DA9BE18ED6A5100CDA6C5 /* MemoritViewController.xib */,
+			);
+			name = MemoritViewController;
+			sourceTree = "<group>";
+		};
+		B67AA02C18EDD9DF0013937E /* InfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B67AA02718EDD9DB0013937E /* InfoViewController.h */,
+				B67AA02818EDD9DB0013937E /* InfoViewController.m */,
+				B67AA02918EDD9DB0013937E /* InfoViewController.xib */,
+			);
+			name = InfoViewController;
+			sourceTree = "<group>";
+		};
+		B6868C9B18F2DC13003A8E6E /* MemoritGame */ = {
+			isa = PBXGroup;
+			children = (
+				B67AA02D18EDE6960013937E /* MemoritGame.h */,
+				B67AA02E18EDE6960013937E /* MemoritGame.m */,
+			);
+			name = MemoritGame;
+			sourceTree = "<group>";
+		};
+		B69C4F7618EF0B4F00131947 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B69C4F7718EF0B4F00131947 /* blue-dim.png */,
+				B69C4F7818EF0B4F00131947 /* blue-dim@2x.png */,
+				B69C4F7918EF0B4F00131947 /* blue-lit.png */,
+				B69C4F7A18EF0B4F00131947 /* blue-lit@2x.png */,
+				B69C4F7B18EF0B4F00131947 /* green-dim.png */,
+				B69C4F7C18EF0B4F00131947 /* green-dim@2x.png */,
+				B69C4F7D18EF0B4F00131947 /* green-lit.png */,
+				B69C4F7E18EF0B4F00131947 /* green-lit@2x.png */,
+				B69C4F7F18EF0B4F00131947 /* red-dim.png */,
+				B69C4F8018EF0B4F00131947 /* red-dim@2x.png */,
+				B69C4F8118EF0B4F00131947 /* red-lit.png */,
+				B69C4F8218EF0B4F00131947 /* red-lit@2x.png */,
+				B69C4F8318EF0B4F00131947 /* yellow-dim.png */,
+				B69C4F8418EF0B4F00131947 /* yellow-dim@2x.png */,
+				B69C4F8518EF0B4F00131947 /* yellow-lit.png */,
+				B69C4F8618EF0B4F00131947 /* yellow-lit@2x.png */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B69C4FD718EF147500131947 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B6868C8F18F2D6ED003A8E6E /* default_blue.mp3 */,
+				B6868C9018F2D6ED003A8E6E /* default_green.mp3 */,
+				B6868C9118F2D6ED003A8E6E /* default_red.mp3 */,
+				B6868C9218F2D6ED003A8E6E /* default_yellow.mp3 */,
+			);
+			name = Sounds;
+			path = Memorit/Resources/Sounds;
+			sourceTree = SOURCE_ROOT;
+		};
+		B6CF74CF18ED306B001DD607 = {
+			isa = PBXGroup;
+			children = (
+				B67AA00F18EDBAE30013937E /* Source */,
+				B65DA9C118ED6CA500CDA6C5 /* Resources */,
+				B6CF74FA18ED306B001DD607 /* MemoritTests */,
+				B6CF74DA18ED306B001DD607 /* Frameworks */,
+				B6CF74D918ED306B001DD607 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6CF74D918ED306B001DD607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6CF74D818ED306B001DD607 /* Memorit.app */,
+				B6CF74F318ED306B001DD607 /* MemoritTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6CF74DA18ED306B001DD607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6868C8D18F291C3003A8E6E /* AVFoundation.framework */,
+				B6CF74DB18ED306B001DD607 /* Foundation.framework */,
+				B6CF74DD18ED306B001DD607 /* CoreGraphics.framework */,
+				B6CF74DF18ED306B001DD607 /* UIKit.framework */,
+				B6CF74F418ED306B001DD607 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6CF74E118ED306B001DD607 /* Memorit */ = {
+			isa = PBXGroup;
+			children = (
+				B6CF74EA18ED306B001DD607 /* AppDelegate.h */,
+				B6CF74EB18ED306B001DD607 /* AppDelegate.m */,
+				B6CF74ED18ED306B001DD607 /* Images.xcassets */,
+				B6CF74E218ED306B001DD607 /* Supporting Files */,
+			);
+			path = Memorit;
+			sourceTree = "<group>";
+		};
+		B6CF74E218ED306B001DD607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6CF74E318ED306B001DD607 /* Memorit-Info.plist */,
+				B6CF74E418ED306B001DD607 /* InfoPlist.strings */,
+				B6CF74E718ED306B001DD607 /* main.m */,
+				B6CF74E918ED306B001DD607 /* Memorit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6CF74FA18ED306B001DD607 /* MemoritTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6CF750018ED306B001DD607 /* MemoritTests.m */,
+				B6CF74FB18ED306B001DD607 /* Supporting Files */,
+			);
+			path = MemoritTests;
+			sourceTree = "<group>";
+		};
+		B6CF74FB18ED306B001DD607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6CF74FC18ED306B001DD607 /* MemoritTests-Info.plist */,
+				B6CF74FD18ED306B001DD607 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6CF74D718ED306B001DD607 /* Memorit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6CF750418ED306B001DD607 /* Build configuration list for PBXNativeTarget "Memorit" */;
+			buildPhases = (
+				B6CF74D418ED306B001DD607 /* Sources */,
+				B6CF74D518ED306B001DD607 /* Frameworks */,
+				B6CF74D618ED306B001DD607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memorit;
+			productName = Memorit;
+			productReference = B6CF74D818ED306B001DD607 /* Memorit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6CF74F218ED306B001DD607 /* MemoritTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6CF750718ED306B001DD607 /* Build configuration list for PBXNativeTarget "MemoritTests" */;
+			buildPhases = (
+				B6CF74EF18ED306B001DD607 /* Sources */,
+				B6CF74F018ED306B001DD607 /* Frameworks */,
+				B6CF74F118ED306B001DD607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6CF74F918ED306B001DD607 /* PBXTargetDependency */,
+			);
+			name = MemoritTests;
+			productName = MemoritTests;
+			productReference = B6CF74F318ED306B001DD607 /* MemoritTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6CF74D018ED306B001DD607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Exceen;
+				TargetAttributes = {
+					B6CF74F218ED306B001DD607 = {
+						TestTargetID = B6CF74D718ED306B001DD607;
+					};
+				};
+			};
+			buildConfigurationList = B6CF74D318ED306B001DD607 /* Build configuration list for PBXProject "Memorit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6CF74CF18ED306B001DD607;
+			productRefGroup = B6CF74D918ED306B001DD607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6CF74D718ED306B001DD607 /* Memorit */,
+				B6CF74F218ED306B001DD607 /* MemoritTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6CF74D618ED306B001DD607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69C4F8F18EF0B4F00131947 /* red-dim.png in Resources */,
+				B69C4F9518EF0B4F00131947 /* yellow-lit.png in Resources */,
+				B69C4F8E18EF0B4F00131947 /* green-lit@2x.png in Resources */,
+				B69C4F9618EF0B4F00131947 /* yellow-lit@2x.png in Resources */,
+				B6868C9518F2D6ED003A8E6E /* default_red.mp3 in Resources */,
+				B6868C9918F2D9F3003A8E6E /* launch-image@2x_R4.png in Resources */,
+				B6868C9318F2D6ED003A8E6E /* default_blue.mp3 in Resources */,
+				B67AA01318EDC3750013937E /* background@2x.png in Resources */,
+				B6868C9418F2D6ED003A8E6E /* default_green.mp3 in Resources */,
+				B67AA01218EDC3750013937E /* background.png in Resources */,
+				B69C4F8818EF0B4F00131947 /* blue-dim@2x.png in Resources */,
+				B6868C9618F2D6ED003A8E6E /* default_yellow.mp3 in Resources */,
+				B69C4F9018EF0B4F00131947 /* red-dim@2x.png in Resources */,
+				B65DA9C018ED6A5100CDA6C5 /* MemoritViewController.xib in Resources */,
+				B69C4F8B18EF0B4F00131947 /* green-dim.png in Resources */,
+				B6CF74E618ED306B001DD607 /* InfoPlist.strings in Resources */,
+				B69C4FE918EF81BC00131947 /* background-ready@2x.png in Resources */,
+				B69C4F8918EF0B4F00131947 /* blue-lit.png in Resources */,
+				B6CF74EE18ED306B001DD607 /* Images.xcassets in Resources */,
+				B69C4F8C18EF0B4F00131947 /* green-dim@2x.png in Resources */,
+				B67AA02B18EDD9DB0013937E /* InfoViewController.xib in Resources */,
+				B69C4F9218EF0B4F00131947 /* red-lit@2x.png in Resources */,
+				B69C4F8718EF0B4F00131947 /* blue-dim.png in Resources */,
+				B69C4FE818EF81BC00131947 /* background-ready.png in Resources */,
+				B69C4F8A18EF0B4F00131947 /* blue-lit@2x.png in Resources */,
+				B69C4F9318EF0B4F00131947 /* yellow-dim.png in Resources */,
+				B69C4F9118EF0B4F00131947 /* red-lit.png in Resources */,
+				B69C4F9418EF0B4F00131947 /* yellow-dim@2x.png in Resources */,
+				B69C4F8D18EF0B4F00131947 /* green-lit.png in Resources */,
+				B6868C9A18F2D9F3003A8E6E /* launch-image@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CF74F118ED306B001DD607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CF74FF18ED306B001DD607 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6CF74D418ED306B001DD607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CF74EC18ED306B001DD607 /* AppDelegate.m in Sources */,
+				B6CF74E818ED306B001DD607 /* main.m in Sources */,
+				B67AA01718EDCC750013937E /* MemoritViewController.m in Sources */,
+				B67AA02A18EDD9DB0013937E /* InfoViewController.m in Sources */,
+				B67AA02F18EDE6960013937E /* MemoritGame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CF74EF18ED306B001DD607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CF750118ED306B001DD607 /* MemoritTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6CF74F918ED306B001DD607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6CF74D718ED306B001DD607 /* Memorit */;
+			targetProxy = B6CF74F818ED306B001DD607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6CF74E418ED306B001DD607 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6CF74E518ED306B001DD607 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6CF74FD18ED306B001DD607 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6CF74FE18ED306B001DD607 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6CF750218ED306B001DD607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6CF750318ED306B001DD607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6CF750518ED306B001DD607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memorit/Memorit-Prefix.pch";
+				INFOPLIST_FILE = "Memorit/Memorit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6CF750618ED306B001DD607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memorit/Memorit-Prefix.pch";
+				INFOPLIST_FILE = "Memorit/Memorit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6CF750818ED306B001DD607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Memorit.app/Memorit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memorit/Memorit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MemoritTests/MemoritTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6CF750918ED306B001DD607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Memorit.app/Memorit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Memorit/Memorit-Prefix.pch";
+				INFOPLIST_FILE = "MemoritTests/MemoritTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6CF74D318ED306B001DD607 /* Build configuration list for PBXProject "Memorit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6CF750218ED306B001DD607 /* Debug */,
+				B6CF750318ED306B001DD607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6CF750418ED306B001DD607 /* Build configuration list for PBXNativeTarget "Memorit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6CF750518ED306B001DD607 /* Debug */,
+				B6CF750618ED306B001DD607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6CF750718ED306B001DD607 /* Build configuration list for PBXNativeTarget "MemoritTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6CF750818ED306B001DD607 /* Debug */,
+				B6CF750918ED306B001DD607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6CF74D018ED306B001DD607 /* Project object */;
+}
